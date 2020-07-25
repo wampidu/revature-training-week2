@@ -9,9 +9,19 @@ namespace PizzaStore.Domain.Models
     public List<Pizza> Pizzas { get; set; }
     public DateTime DateOrdered { get; set; }
 
-    public void CreatePizza()
+    public void CreatePizza(Size size, Crust crust, Topping toppings)
     {
-      Pizzas.Add(new Pizza());
+      Pizzas.Add(new Pizza(size, crust, toppings));
+    }
+
+    public Order()
+    {
+      Pizzas = new List<Pizza>();
+    }
+
+    public static object GetPropValue(object src, string propname)
+    {
+      return src.GetType().GetProperty(propname).GetValue(src, null);
     }
 
   }

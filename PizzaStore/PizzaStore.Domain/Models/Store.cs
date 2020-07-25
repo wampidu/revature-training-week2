@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace PizzaStore.Domain.Models
 {
-  public class PizzaStore
+  public class Store
   {
     public List<Order> Orders { get; set; }
     public string Name { get; set; }

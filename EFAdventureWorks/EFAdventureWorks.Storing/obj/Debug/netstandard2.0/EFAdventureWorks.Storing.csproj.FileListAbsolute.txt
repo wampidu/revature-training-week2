@@ -1,0 +1,9 @@
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/bin/Debug/netstandard2.0/EFAdventureWorks.Storing.deps.json
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/bin/Debug/netstandard2.0/EFAdventureWorks.Storing.dll
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/bin/Debug/netstandard2.0/EFAdventureWorks.Storing.pdb
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/obj/Debug/netstandard2.0/EFAdventureWorks.Storing.csprojAssemblyReference.cache
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/obj/Debug/netstandard2.0/EFAdventureWorks.Storing.AssemblyInfoInputs.cache
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/obj/Debug/netstandard2.0/EFAdventureWorks.Storing.AssemblyInfo.cs
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/obj/Debug/netstandard2.0/EFAdventureWorks.Storing.csproj.CoreCompileInputs.cache
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/obj/Debug/netstandard2.0/EFAdventureWorks.Storing.dll
+/home/wompydoo/revature/Week_2/EFAdventureWorks/EFAdventureWorks.Storing/obj/Debug/netstandard2.0/EFAdventureWorks.Storing.pdb
