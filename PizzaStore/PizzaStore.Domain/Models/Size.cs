@@ -23,7 +23,11 @@ namespace PizzaStore.Models.Domain
 
     public Size(string size)
     {
-      return 
+      
+    }
+    public Size()
+    {
+
     }
   }
 }

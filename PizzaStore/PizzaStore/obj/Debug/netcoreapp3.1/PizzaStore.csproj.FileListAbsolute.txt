@@ -1,0 +1,16 @@
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.csprojAssemblyReference.cache
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.AssemblyInfoInputs.cache
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.AssemblyInfo.cs
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.csproj.CoreCompileInputs.cache
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore.deps.json
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore.runtimeconfig.json
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore.runtimeconfig.dev.json
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore.dll
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore.pdb
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore.Domain.dll
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/bin/Debug/netcoreapp3.1/PizzaStore.Domain.pdb
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.csproj.CopyComplete
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.dll
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.pdb
+/home/wompydoo/revature/Week_2/PizzaStore/PizzaStore/obj/Debug/netcoreapp3.1/PizzaStore.genruntimeconfig.cache

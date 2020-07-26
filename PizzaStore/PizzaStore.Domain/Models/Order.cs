@@ -19,6 +19,11 @@ namespace PizzaStore.Domain.Models
       Pizzas = new List<Pizza>();
     }
 
+    public void Add(Pizza pizza)
+    {
+      Pizzas.Add(pizza);
+    }
+
     public static object GetPropValue(object src, string propname)
     {
       return src.GetType().GetProperty(propname).GetValue(src, null);
