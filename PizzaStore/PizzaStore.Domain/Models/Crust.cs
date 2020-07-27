@@ -2,23 +2,16 @@ namespace PizzaStore.Models.Domain
 {
   public class Crust
   {
-    public string Regular { get; set; }
-    public string Stuffed { get; set; }
-    public string Pan { get; set; }
+    public string  name { get; set; }
 
-    public string ReturnCrustReg()
+    public void SetCrust(string crust)
     {
-      return Regular;
+      name = crust;
     }
 
-    public string ReturnCrustStuf()
+    public Crust()
     {
-      return Stuffed;
-    }
 
-    public string ReturnCrustPan()
-    {
-      return Pan;
     }
   }
 }

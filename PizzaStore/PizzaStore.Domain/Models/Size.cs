@@ -2,28 +2,12 @@ namespace PizzaStore.Models.Domain
 {
   public class Size
   {
-    public string Large { get; set; }
-    public string Medium { get; set; }
-    public string Small { get; set; }
+    public string  name { get; set; }
 
-    public string ReturnSizeL()
-    {
-      return Large;
-    }
 
-    public string ReturnSizeM()
+    public void SetSize(string size)
     {
-      return Medium;
-    }
-
-    public string ReturnSizeS()
-    {
-      return Small;
-    }
-
-    public Size(string size)
-    {
-      
+      name = size;
     }
     public Size()
     {

@@ -17,19 +17,19 @@ namespace PizzaStore.Domain.Models
 
     public override string ToString()
     {
-      var sb = new StringBuilder();
-      foreach (var t in Toppings)
-      {
-        sb.Append(t);
-      }
-      return $"{Crust} {Size} {sb}";
+      //var sb = new StringBuilder();
+      //foreach (var t in Toppings)
+      //{
+      //  sb.Append(t);
+     // }
+      return $"{Crust.name} {Size.name} ";
     }
 
     public Pizza(Size size, Crust crust, Topping toppings)
     {
       Crust = crust;
       Size = size;
-      Toppings.Add(toppings);
+      //Toppings.Add(toppings);
     }
 
     public Pizza()

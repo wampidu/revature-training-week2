@@ -13,7 +13,7 @@ namespace Pizzastore
       Welcome();
     }
 
-    
+
     static void Welcome()
     {
 
@@ -25,40 +25,31 @@ namespace Pizzastore
       var store = new Store();
       var order = startup.CreateOrder(user, store);
 
-      try
-      {
-        Menu2(startup.CreateOrder(user, store));
-      }
-      catch(Exception ex)
-      {
-        System.Console.WriteLine(ex.Message);
-      }
+      // try
+      //  {
+      Menu2(startup.CreateOrder(user, store));
+      //  }
+      //catch(Exception ex)
+      // {
+      //   System.Console.WriteLine(ex.Message);
+      // }
     }
     static void Menu2(Order cart)
     {
       var exit = false;
+      var Size = new Size();
+      var Crust = new Crust();
+      var Topping = new Topping();
       do
       {
-        //Initialize Toppings
-        var CheeseTopping = new Topping();
-        var PepperoniTopping = new Topping();
-        var PineappleTopping = new Topping();
-        var HamTopping = new Topping();
-        var GrPepperTopping = new Topping();
-        var SausageTopping = new Topping();
-        //Initialize Crusts
-        var RegCrust = new Crust();
-        var StuffedCrust = new Crust();
-        var PanCrust = new Crust();
-        //Initialize Sizes
-        var Small = new Size();
-        var Med = new Size();
-        var Large = new Size();
-        int select;
-        //Initialize Topping Selection argument
-        var ToppingSelection = true;
-        int.TryParse(Console.ReadLine(), out select);
         Startup.PrintMenuInitial();
+        int select;
+        var ToppingSelection = true;
+        
+
+
+        
+        int.TryParse(Console.ReadLine(), out select);
         switch (select)
         {
           case 1:
@@ -67,132 +58,106 @@ namespace Pizzastore
             switch (select)
             {
               case 1: //Cheese Pizza Preset
-                var CheesePizza = new Pizza();
+                Topping.SetTopping("cheese");
                 Startup.PrintMenuSize();
-                //var CheeseTopping = new Topping();
-                CheesePizza.Toppings.Add(CheeseTopping);
                 int.TryParse(Console.ReadLine(), out select);
-                switch(select) 
+                switch (select)
                 {
-                  case 1: 
-                    //var Small = new Size();
-                    CheesePizza.Size = Small;
+                  case 1:
+                    Size.SetSize("small");
                     break;
                   case 2:
-                    //var Med = new Size();
-                    CheesePizza.Size = Med;
+                    Size.SetSize("medium");
                     break;
                   case 3:
-                    //var Large = new Size();
-                    CheesePizza.Size = Large;
+                    Size.SetSize("large");
                     break;
                 }
                 //^^Size Selection
                 Startup.PrintMenuCrust();
                 int.TryParse(Console.ReadLine(), out select);
-                switch(select)
+                switch (select)
                 {
-                  case 1: 
-                    //var RegCrust = new Crust();
-                    CheesePizza.Crust = RegCrust;
+                  case 1:
+                    Crust.SetCrust("regular");
                     break;
                   case 2:
-                    //var StuffedCrust = new Crust();
-                    CheesePizza.Crust = StuffedCrust;
+                    Crust.SetCrust("stuffed");
                     break;
                   case 3:
-                    //var PanCrust = new Crust();
-                    CheesePizza.Crust = PanCrust;
+                    Crust.SetCrust("pan");
                     break;
                 }
                 //^^Crust Selection
-                cart.Add(CheesePizza);
+                cart.CreatePizza(Size, Crust, Topping);
                 break;
               case 2: //Pepperoni Pizza Preset
-                var PepperoniPizza = new Pizza();
+                Topping.SetTopping("pepperoni");
                 Startup.PrintMenuSize();
-                //var CheeseTopping = new Topping();
-                PepperoniPizza.Toppings.Add(CheeseTopping);
-                PepperoniPizza.Toppings.Add(PepperoniTopping);
                 int.TryParse(Console.ReadLine(), out select);
-                switch(select) 
+                switch (select)
                 {
-                  case 1: 
-                    //var Small = new Size();
-                    PepperoniPizza.Size = Small;
+                  case 1:
+                    Size.SetSize("small");
                     break;
                   case 2:
-                    //var Med = new Size();
-                    PepperoniPizza.Size = Med;
+                    Size.SetSize("medium");
                     break;
                   case 3:
-                    //var Large = new Size();
-                    PepperoniPizza.Size = Large;
+                    Size.SetSize("large");
                     break;
                 }
                 //^^Size Selection
                 Startup.PrintMenuCrust();
                 int.TryParse(Console.ReadLine(), out select);
-                switch(select)
+                switch (select)
                 {
-                  case 1: 
-                    //var RegCrust = new Crust();
-                    PepperoniPizza.Crust = RegCrust;
+                  case 1:
+                    Crust.SetCrust("regular");
                     break;
                   case 2:
-                    //var StuffedCrust = new Crust();
-                    PepperoniPizza.Crust = StuffedCrust;
+                    Crust.SetCrust("stuffed");
                     break;
                   case 3:
-                    //var PanCrust = new Crust();
-                    PepperoniPizza.Crust = PanCrust;
+                    Crust.SetCrust("pan");
                     break;
                 }
                 //^^Crust Selection
-                cart.Add(PepperoniPizza);
+                cart.CreatePizza(Size, Crust, Topping);
                 break;
               case 3: //Hawaiian Pizza Preset
-                var HawaiianPizza = new Pizza();
+                Topping.SetTopping("pineapple");
                 Startup.PrintMenuSize();
-                //var CheeseTopping = new Topping();
-                HawaiianPizza.Toppings.Add(CheeseTopping);
-                HawaiianPizza.Toppings.Add(PineappleTopping);
                 int.TryParse(Console.ReadLine(), out select);
-                switch(select) 
+                switch (select)
                 {
-                  case 1: 
-                    //var Small = new Size();
-                    HawaiianPizza.Size = Small;
+                  case 1:
+                    Size.SetSize("small");
                     break;
                   case 2:
-                    //var Med = new Size();
-                    HawaiianPizza.Size = Med;
+                    Size.SetSize("medium");
                     break;
                   case 3:
-                    //var Large = new Size();
-                    HawaiianPizza.Size = Large;
+                    Size.SetSize("large");
                     break;
                 }
                 //^^Size Selection
                 Startup.PrintMenuCrust();
                 int.TryParse(Console.ReadLine(), out select);
-                switch(select)
+                switch (select)
                 {
-                  case 1: 
-                    //var RegCrust = new Crust();
-                    HawaiianPizza.Crust = RegCrust;
+                  case 1:
+                    Crust.SetCrust("regular");
                     break;
                   case 2:
-                    //var StuffedCrust = new Crust();
-                    HawaiianPizza.Crust = StuffedCrust;
+                    Crust.SetCrust("stuffed");
                     break;
                   case 3:
-                    //var PanCrust = new Crust();
-                    HawaiianPizza.Crust = PanCrust;
+                    Crust.SetCrust("pan");
                     break;
                 }
                 //^^Crust Selection
-                cart.Add(HawaiianPizza);
+                cart.CreatePizza(Size, Crust, Topping);
                 break;
               case 4:
                 break;
@@ -214,71 +179,69 @@ namespace Pizzastore
             }
             break;
           case 2:
-                var CustomPizza = new Pizza();
-                Startup.PrintMenuSize();
-                int.TryParse(Console.ReadLine(), out select);
-                switch(select) 
-                {
-                  case 1: 
-                    //var Small = new Size();
-                    CustomPizza.Size = Small;
+            Startup.PrintMenuSize();
+            int.TryParse(Console.ReadLine(), out select);
+            switch (select)
+            {
+              case 1:
+                    Size.SetSize("small");
+                    break;
+              case 2:
+                    Size.SetSize("medium");
+                    break;
+              case 3:
+                    Size.SetSize("large");
+                    break;
+            }
+            //^^Size Selection
+            Startup.PrintMenuCrust();
+            int.TryParse(Console.ReadLine(), out select);
+            switch (select)
+            {
+              case 1:
+                    Crust.SetCrust("regular");
                     break;
                   case 2:
-                    //var Med = new Size();
-                    CustomPizza.Size = Med;
+                    Crust.SetCrust("stuffed");
                     break;
                   case 3:
-                    //var Large = new Size();
-                    CustomPizza.Size = Large;
+                    Crust.SetCrust("pan");
                     break;
-                }
-                //^^Size Selection
-                Startup.PrintMenuCrust();
-                int.TryParse(Console.ReadLine(), out select);
-                switch(select)
-                {
-                  case 1: 
-                    //var RegCrust = new Crust();
-                    CustomPizza.Crust = RegCrust;
-                    break;
-                  case 2:
-                    //var StuffedCrust = new Crust();
-                    CustomPizza.Crust = StuffedCrust;
-                    break;
-                  case 3:
-                    //var PanCrust = new Crust();
-                    CustomPizza.Crust = PanCrust;
-                    break;
-                }
-                //^^Crust Selection
-                Startup.PrintMenuToppings();
-                int.TryParse(Console.ReadLine(), out select);
-                do
-                {
-                switch(select)
-                {
-                  case 1:
-                    CustomPizza.Toppings.Add(PepperoniTopping);
-                    break;
-                  case 2:
-                    CustomPizza.Toppings.Add(HamTopping);
-                    break;
-                  case 3:
-                    CustomPizza.Toppings.Add(GrPepperTopping);
-                    break;
-                  case 4:
-                    CustomPizza.Toppings.Add(PineappleTopping);
-                    break;
-                  case 5:
-                    CustomPizza.Toppings.Add(SausageTopping);
-                    break;
-                  case 6:
-                    ToppingSelection = false;
-                    break;
-                }
-                } while (ToppingSelection == true);
-                //^^Topping Selection
-                cart.Add(CustomPizza);
+            }
+            //^^Crust Selection
+            Startup.PrintMenuToppings();
+            int.TryParse(Console.ReadLine(), out select);
+            do
+            {
+              switch (select)
+              {
+                case 1:
+                  //CustomPizza.Toppings.Add(PepperoniTopping);
+                  Topping.SetTopping("pepperoni");
+                  break;
+                case 2:
+                  //CustomPizza.Toppings.Add(HamTopping);
+                  Topping.SetTopping("ham");
+                  break;
+                case 3:
+                  //CustomPizza.Toppings.Add(GrPepperTopping);
+                  Topping.SetTopping("green pepper");
+                  break;
+                case 4:
+                  //CustomPizza.Toppings.Add(PineappleTopping);
+                  Topping.SetTopping("pineapple");
+                  break;
+                case 5:
+                 //CustomPizza.Toppings.Add(SausageTopping);
+                  Topping.SetTopping("sausage");
+                  break;
+                case 6:
+                  ToppingSelection = false;
+                  break;
+              }
+            } while (ToppingSelection == true);
+            //^^Topping Selection
+            cart.CreatePizza(Size, Crust, Topping);
             break;
           case 3:
             DisplayCart(cart);
